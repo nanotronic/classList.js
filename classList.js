@@ -14,7 +14,7 @@
 if ("document" in self) {
 
 // Full polyfill for browsers with no classList support
-if ("document" in self && (!("classList" in document.createElement("_")) || !(document.createElementNS != undefined && "classList" in document.createElementNS("http://www.w3.org/2000/svg", "_")))) {
+if (!("classList" in document.createElement("_")) || !(document.createElementNS != undefined && "classList" in document.createElementNS("http://www.w3.org/2000/svg", "_"))) {
 
 (function (view) {
 
